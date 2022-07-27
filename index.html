@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Space Tourism</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220727164928">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div data-page="home" class="wrapper">
+		<picture><source srcset="img/home/background-home-desktop.webp" type="image/webp"><img class="background" src="img/home/background-home-desktop.jpg" alt=""></picture>
+		<picture><source srcset="img/home/background-home-mobile.webp" type="image/webp"><img class="background" src="img/home/background-home-mobile.jpg" alt=""></picture>
+		<picture><source srcset="img/home/background-home-tablet.webp" type="image/webp"><img class="background" src="img/home/background-home-tablet.jpg" alt=""></picture>
+		<header class="header">
+			<div class="header__logo">
+				<img src="img/shared/logo.svg" alt="Logo">
+			</div>
+			<div class="header__menu menu">
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li data-page="home" class="menu__item _active"><span>00</span>HOME</li>
+						<li data-page="destination" class="menu__item"><span>01</span>DESTINATION</li>
+						<li data-page="crew" class="menu__item"><span>02</span>CREW</li>
+						<li data-page="technology" class="menu__item"><span>03</span>TECHNOLOGY</li>
+					</ul>
+				</nav>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<section data-active="true" class="page__home home">
+				<div class="home__content">
+					<div class="home__body">
+						<h2 class="home__title-top">SO, YOU WANT TO TRAVEL TO</h2>
+						<h1 class="home__title-bottom">SPACE</h1>
+						<div class="home__text">
+							<p class="general-text">Let’s face it; if you want to go to space, you might as well genuinely go to outer
+								space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly
+								out of this world experience!</p>
+						</div>
+					</div>
+				</div>
+				<div class="home__button">
+					<button type="button" data-popup="#popup" class="link">EXPLORE</button>
+				</div>
+			</section>
+			<section data-active="false" class="page__destination destination">
+				<h2 class="destination__title general-title"><span>01</span>Pick your destination</h2>
+				<div class="destination__body planet">
+					<div class="planet__image">
+						<picture><source srcset="img/destination/image-moon.webp" type="image/webp"><img data-visible="true" class="moon" src="img/destination/image-moon.png" alt="moon"></picture>
+						<picture><source srcset="img/destination/image-mars.webp" type="image/webp"><img data-visible="false" class="mars" src="img/destination/image-mars.png" alt="Mars"></picture>
+						<picture><source srcset="img/destination/image-europa.webp" type="image/webp"><img data-visible="false" class="europa" src="img/destination/image-europa.png" alt="Europa"></picture>
+						<picture><source srcset="img/destination/image-titan.webp" type="image/webp"><img data-visible="false" class="titan" src="img/destination/image-titan.png" alt="titan"></picture>
+					</div>
+					<div class="planet__content">
+						<div class="planet__menu menu-planet">
+							<nav class="menu-planet__body">
+								<ul class="menu-planet__list">
+									<li data-planet="moon" data-active="true" class="menu-planet__item">MOON</li>
+									<li data-planet="mars" data-active="false" class="menu-planet__item">MARS</li>
+									<li data-planet="europa" data-active="false" class="menu-planet__item">EUROPA</li>
+									<li data-planet="titan" data-active="false" class="menu-planet__item">TITAN</li>
+								</ul>
+							</nav>
+						</div>
+						<div data-visible="true" class="planet__body moon">
+							<h3 class="planet__title">MOON</h3>
+							<div class="planet__text">
+								<p class="general-text">See our planet as you’ve never seen it before. A perfect relaxing trip away to
+									help regain perspective and come back refreshed. While you’re there, take in some history by visiting
+									the Luna 2 and Apollo 11 landing sites.</p>
+							</div>
+							<div class="planet__value value-planet">
+								<div class="value-planet__distance">
+									<div class="value-planet__name">AVG. DISTANCE</div>
+									<div class="value-planet__data">384,400 km</div>
+								</div>
+								<div class="value-planet__time">
+									<div class="value-planet__name">Est. travel time</div>
+									<div class="value-planet__data">3 days</div>
+								</div>
+							</div>
+						</div>
+						<div data-visible="false" class="planet__body mars">
+							<h3 class="planet__title">MARS</h3>
+							<div class="planet__text">
+								<p class="general-text">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+							</div>
+							<div class="planet__value value-planet">
+								<div class="value-planet__distance">
+									<div class="value-planet__name">AVG. DISTANCE</div>
+									<div class="value-planet__data">225 MIL. km</div>
+								</div>
+								<div class="value-planet__time">
+									<div class="value-planet__name">Est. travel time</div>
+									<div class="value-planet__data">9 months</div>
+								</div>
+							</div>
+						</div>
+						<div data-visible="false" class="planet__body europa">
+							<h3 class="planet__title">EUROPA</h3>
+							<div class="planet__text">
+								<p class="general-text">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+							</div>
+							<div class="planet__value value-planet">
+								<div class="value-planet__distance">
+									<div class="value-planet__name">AVG. DISTANCE</div>
+									<div class="value-planet__data">628 MIL. km</div>
+								</div>
+								<div class="value-planet__time">
+									<div class="value-planet__name">Est. travel time</div>
+									<div class="value-planet__data">3 years</div>
+								</div>
+							</div>
+						</div>
+						<div data-visible="false" class="planet__body titan">
+							<h3 class="planet__title">TITAN</h3>
+							<div class="planet__text">
+								<p class="general-text">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+							</div>
+							<div class="planet__value value-planet">
+								<div class="value-planet__distance">
+									<div class="value-planet__name">AVG. DISTANCE</div>
+									<div class="value-planet__data">1.6 BIL. km</div>
+								</div>
+								<div class="value-planet__time">
+									<div class="value-planet__name">Est. travel time</div>
+									<div class="value-planet__data">7 years</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-active="false" class="page__crew crew">
+				<h2 class="crew__title general-title"><span>02</span>Meet your crew</h2>
+				<!-- Оболочка слайдера -->
+				<div class="crew__slider swiper">
+					<!-- Двигающееся часть слайдера -->
+					<div class="crew__wrapper swiper-wrapper">
+						<div class="crew__slide swiper-slide">
+							<div class="crew__body">
+								<div class="crew__item">
+									<div class="crew__content">
+										<div class="crew__position">Commander</div>
+										<h3 class="crew__name">Douglas Hurley</h3>
+										<p class="crew__text general-text">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+									</div>
+								</div>
+								<div class="crew__image">
+									<picture><source srcset="img/crew/image-douglas-hurley.webp" type="image/webp"><img src="img/crew/image-douglas-hurley.png" alt="Douglas Hurley"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="crew__slide swiper-slide">
+							<div class="crew__body">
+								<div class="crew__item">
+									<div class="crew__content">
+										<div class="crew__position">Mission Specialist </div>
+										<h3 class="crew__name">MARK SHUTTLEWORTH</h3>
+										<p class="crew__text general-text">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+									</div>
+								</div>
+								<div class="crew__image">
+									<picture><source srcset="img/crew/image-mark-shuttleworth.webp" type="image/webp"><img src="img/crew/image-mark-shuttleworth.png" alt="MARK SHUTTLEWORTH"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="crew__slide swiper-slide">
+							<div class="crew__body">
+								<div class="crew__item">
+									<div class="crew__content">
+										<div class="crew__position">PILOT</div>
+										<h3 class="crew__name">Victor Glover</h3>
+										<p class="crew__text general-text">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+									</div>
+								</div>
+								<div class="crew__image">
+									<picture><source srcset="img/crew/image-victor-glover.webp" type="image/webp"><img src="img/crew/image-victor-glover.png" alt="Victor Glover"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="crew__slide swiper-slide">
+							<div class="crew__body">
+								<div class="crew__item">
+									<div class="crew__content">
+										<div class="crew__position">Flight Engineer</div>
+										<h3 class="crew__name">Anousheh Ansari</h3>
+										<p class="crew__text general-text">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+									</div>
+								</div>
+								<div class="crew__image">
+									<picture><source srcset="img/crew/image-anousheh-ansari.webp" type="image/webp"><img src="img/crew/image-anousheh-ansari.png" alt="Anousheh Ansari"></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<section data-active="false" class="page__technology technology">
+				<div class="technology__grid-aria">
+					<div class="technology__title">
+						<h2 class="general-title"><span>03</span>SPACE LAUNCH 101</h2>
+					</div>
+					<div class="technology__menu menu-technology">
+						<nav class="menu-technology__body">
+							<ul class="menu-technology__list">
+								<li data-activeted="true" class="menu-technology__item">1</li>
+								<li data-activeted="false" class="menu-technology__item">2</li>
+								<li data-activeted="false" class="menu-technology__item">3</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="technology__content">
+						<div data-active="true" data-visible="true" class="technology__body">
+							<h4 class="technology__top">THE TERMINOLOGY…</h4>
+							<h3 class="technology__middle">LAUNCH VEHICLE</h3>
+							<div class="technology__text general-text">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</div>
+						</div>
+						<div data-active="false" data-visible="false" class="technology__body">
+							<h4 class="technology__top">THE TERMINOLOGY…</h4>
+							<h3 class="technology__middle">SPACEPORT</h3>
+							<div class="technology__text general-text">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</div>
+						</div>
+						<div data-active="false" data-visible="false" class="technology__body">
+							<h4 class="technology__top">THE TERMINOLOGY…</h4>
+							<h3 class="technology__middle">SPACE CAPSULE</h3>
+							<div class="technology__text general-text">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</div>
+						</div>
+					</div>
+					<div class="technology__image">
+						<div data-active="true" data-visible="true" class="technology__image_1"></div>
+						<div data-active="false" data-visible="false" class="technology__image_2"></div>
+						<div data-active="false" data-visible="false" class="technology__image_3"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<picture><source srcset="img/crew/background-crew-desktop.webp" type="image/webp"><img class="background" src="img/crew/background-crew-desktop.jpg" alt=""></picture>
+		<picture><source srcset="img/crew/background-crew-mobile.webp" type="image/webp"><img class="background" src="img/crew/background-crew-mobile.jpg" alt=""></picture>
+		<picture><source srcset="img/crew/background-crew-tablet.webp" type="image/webp"><img class="background" src="img/crew/background-crew-tablet.jpg" alt=""></picture>
+		<picture><source srcset="img/destination/background-destination-desktop.webp" type="image/webp"><img class="background" src="img/destination/background-destination-desktop.jpg" alt=""></picture>
+		<picture><source srcset="img/destination/background-destination-tablet.webp" type="image/webp"><img class="background" src="img/destination/background-destination-tablet.jpg" alt=""></picture>
+		<picture><source srcset="img/destination/background-destination-mobile.webp" type="image/webp"><img class="background" src="img/destination/background-destination-mobile.jpg" alt=""></picture>
+		<picture><source srcset="img/technology/background-technology-desktop.webp" type="image/webp"><img class="background" src="img/technology/background-technology-desktop.jpg" alt=""></picture>
+		<picture><source srcset="img/technology/background-technology-mobile.webp" type="image/webp"><img class="background" src="img/technology/background-technology-mobile.jpg" alt=""></picture>
+		<picture><source srcset="img/technology/background-technology-tablet.webp" type="image/webp"><img class="background" src="img/technology/background-technology-tablet.jpg" alt=""></picture>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><img src="img/shared/icon-close.svg" alt="close"></button>
+				<div class="popup__text">
+					<form data-dev data-popup-message="#form-message" class="form" action="#">
+						<input type="text" placeholder="Enter your name" class="form__input">
+						<input type="text" name="form[email]" data-error="Error" placeholder="Enter your e-mail" class="form__input">
+						<input type="tel" name="" placeholder="Enter your phone number" class="form__input">
+						<button type="submit" class="form__button">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220727164928"></script>
+</body>
+
+</html>
