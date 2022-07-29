@@ -3763,6 +3763,17 @@
             functions_menuClose();
         }
     }
+    const menuIcon = document.getElementsByClassName("menu__icon");
+    for (let i = 0; i < menuIcon.length; i++) menuIcon[i].addEventListener("click", closeMenu);
+    function closeMenu() {
+        const html = document.querySelector(".watcher");
+        if (false === html.classList.contains("menu-open")) document.addEventListener("click", (function(e) {
+            if (!e.target.closest(".menu__list") && true === html.classList.contains("menu-open") && !e.target.closest(".menu__icon")) {
+                functions_menuClose();
+                return;
+            }
+        }));
+    }
     const destination = document.getElementsByClassName("menu-planet__item");
     for (let i = 0; i < destination.length; i++) destination[i].addEventListener("click", planetChanger);
     function planetChanger() {
